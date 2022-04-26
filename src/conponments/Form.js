@@ -7,7 +7,7 @@ const Form = ({setInputText,inputText,todos,setTodos}) => {
 
 const submitHandler = event => {
     event.preventDefault();
-    inputText=== "" ? alert("you havent wrote anything yet") :setTodos([...todos,{text:inputText , completed: false, id:Math.random()*1000}]);
+    inputText=== "" ? alert("you havent wrote anything yet") : setTodos([...todos,{text:inputText , completed: false, id:Math.random()*1000}]);
     setInputText("") ;
 }
     
